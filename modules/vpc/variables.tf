@@ -15,13 +15,17 @@
  */
 
 variable "project_id" {
-  description = "The ID of the project where this VPC will be created"
   type        = string
+  default     = "tf-vpc-test-mdg"
+  description = "The ID of the project where this VPC will be created"
+  
 }
 
 variable "network_name" {
-  description = "The name of the network being created"
   type        = string
+  default = "quickstart-vpc"
+  description = "The name of the network being created"
+  
 }
 
 variable "routing_mode" {
